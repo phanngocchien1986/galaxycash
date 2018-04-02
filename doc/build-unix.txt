@@ -30,8 +30,14 @@ Qt GUI Wallet
 qmake -makefile galaxycash.pro
 make
 
+LevelDB
+cd /galxycash/src/leveldb
+chmod +x build_detect_platform
+make clean
+make libleveldb.a libmemenv.a
+
 Deamon
-cd src
+cd /galaxycash/src
 make -f makefile.unix 
 
 or with qmake
